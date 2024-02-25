@@ -40,14 +40,14 @@ Efficient structure to arrange the database (audio and video) and the code for t
     ├── presentation.pdf
     └── report.pdf
     
-Getting Started
+## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 Go to preprocess folder and run prepare_directory.sh and then download AVSpeech Dataset. Run data_download.py file for data download from youtube based on AVSpeech Dataset.
 cd preprocess/
 sh prepare_directory.sh
 
 
-Download AVSpeech Dataset in the folder.
+## Download AVSpeech Dataset in the folder.
 python3 data_download.py
 usage: data_download.py [-h] [--from_id FROM_ID] [--to_id TO_ID]
                         [--low_memory LOW_MEMORY] [--sample_rate SAMPLE_RATE]
@@ -73,14 +73,14 @@ We have used face retrieval performace as a evaluation metric and we are able to
 
 
 More training details to reciprocate can be found in presentation.pdf
-Future Work
+## Future Work
 Implementation of the Face Decoder Model, which takes as input the face features predicted by Speech2Face model and produces an image of the face in a canonical form (frontal-facing and with neutral expression).
 The pretrained Face Decoder Model used by the paper was not available and the model was based on another CVPR paper (Synthesizing Normalized Faces from Facial Identity Features)
 We tried implementing the model but this required lots of data for the model to train properly and the result was not even human recognizable.
 As the main focus of the project was on Speech Domain, we plan to complete this Vision task in the future.
-Author:
+## Author:
 Madhurima Sai Veeramachaneni
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 References
 Speech2Face: Learning the Face Behind a Voice (https://arxiv.org/pdf/1905.09773.pdf)
